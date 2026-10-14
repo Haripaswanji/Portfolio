@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hari Om Ji – Shopify Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF1EC;--surface:#FFFFFF;--ink:#13201A;--muted:#52605A;--line:#CBD3CC;--green:#1B6B47;--green-ink:#FFFFFF;--code-bg:#13201A;--code-ink:#DDE8E0;--code-hi:#8FE0B0;--code-dim:#7C8F85;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1713;--surface:#17221C;--ink:#E6EEE8;--muted:#9AABA2;--line:#2A3A31;--green:#5CCB90;--green-ink:#0F1713;--code-bg:#0A100D;--code-ink:#DDE8E0;--code-hi:#8FE0B0;--code-dim:#6F8278}}
+:root[data-theme="dark"]{--bg:#0F1713;--surface:#17221C;--ink:#E6EEE8;--muted:#9AABA2;--line:#2A3A31;--green:#5CCB90;--green-ink:#0F1713;--code-bg:#0A100D}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:18px;line-height:1.6}
+h1,h2,h3,.sans{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:700}
+nav div{display:flex;gap:20px;font-weight:500;font-size:15px}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:56px 0 72px}
+h1{font-size:clamp(40px,7vw,76px);line-height:1;letter-spacing:-.03em;margin:0 0 22px;font-weight:800}
+.lede{max-width:34em;color:var(--muted);font-size:20px;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:16px;padding:13px 22px;border-radius:8px;text-decoration:none;border:2px solid var(--green)}
+.btn.p{background:var(--green);color:var(--green-ink)}
+.btn.s{color:var(--ink);border-color:var(--line)}
+.btn:hover{transform:translateY(-1px)}
+pre{margin:0;background:var(--code-bg);color:var(--code-ink);padding:22px;border-radius:10px;font:14px/1.7 ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;animation:type 1.2s steps(40) both}
+pre .k{color:var(--code-hi)}pre .d{color:var(--code-dim)}
+@keyframes type{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin:0 0 10px;font-weight:800}
+.sub{color:var(--muted);margin:0 0 34px;max-width:40em}
+.sites{display:grid;gap:22px}
+.site{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.site h3{font-size:28px;margin:0 0 4px;letter-spacing:-.02em}
+.site .role{color:var(--green);font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:15px;margin:0 0 14px}
+.site ul{padding-left:20px;margin:0 0 18px}
+.site li{margin-bottom:6px}
+.site .stack{font-family:"Bricolage Grotesque",sans-serif;font-size:14px;color:var(--muted)}
+.site a.visit{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;color:var(--green)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.grid3 h3{font-size:20px;margin:0 0 8px}
+.grid3 p{margin:0;color:var(--muted)}
+.proj{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.proj article{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}.proj h3{font-size:21px;margin:0 0 6px}.proj p{margin:0 0 10px;color:var(--muted)}.proj .now{display:inline-block;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:13px;background:var(--green);color:var(--green-ink);border-radius:999px;padding:3px 12px;margin-bottom:10px}.proj a{color:var(--green);font-family:"Bricolage Grotesque",sans-serif;font-weight:700}.proj .stack{font-family:"Bricolage Grotesque",sans-serif;font-size:14px;color:var(--green);margin:0}
+.tl{display:grid;gap:26px}
+.tl div{display:grid;grid-template-columns:190px 1fr;gap:20px}
+.tl .when{font-family:"Bricolage Grotesque",sans-serif;font-weight:500;color:var(--muted);font-size:15px}
+.tl h3{font-size:19px;margin:0 0 4px}
+.tl p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags span{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 16px;font-family:"Bricolage Grotesque",sans-serif;font-size:15px}
+footer{padding:48px 0 60px;border-top:1px solid var(--line)}
+footer h2{font-size:clamp(32px,5vw,52px)}
+@media (max-width:760px){.hero,.site,.grid3,.proj{grid-template-columns:1fr}.tl div{grid-template-columns:1fr;gap:4px}.hero{padding-top:28px}}
+@media (prefers-reduced-motion:reduce){pre{animation:none}html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><span>Hari Om Ji</span><div><a href="#work">Work</a><a href="#build">What I build</a><a href="#projects">Projects</a><a href="#path">Path</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div>
+<h1>I build Shopify stores that sell.</h1>
+<p class="lede">Shopify developer working across Liquid themes, custom apps and headless builds. I run my own streetwear brand and develop for a live D2C business, so I care about conversion as much as code.</p>
+<div class="btns"><a class="btn p" href="#work">See live stores</a><a class="btn s" href="#contact">Get in touch</a></div>
+</div>
+<pre aria-label="Liquid code sample"><span class="d">{%- comment -%} sections/featured-drop.liquid {%- endcomment -%}</span>
+<span class="k">{%- liquid</span>
+  assign drop = collections[section.settings.collection]
+  assign low = section.settings.low_stock
+<span class="k">-%}</span>
+&lt;ul class="drop"&gt;
+  <span class="k">{% for product in drop.products %}</span>
+    <span class="k">{% if</span> product.selected_or_first_available_variant.inventory_quantity <span class="k">&lt;</span> low <span class="k">%}</span>
+      &lt;span&gt;Almost gone&lt;/span&gt;
+    <span class="k">{% endif %}</span>
+    <span class="k">{% render</span> 'card', product: product <span class="k">%}</span>
+  <span class="k">{% endfor %}</span>
+&lt;/ul&gt;</pre>
+</header>
+
+<section id="work">
+<h2>Live stores</h2>
+<p class="sub">Two Shopify stores I work on today: one as a full-time developer, one that I run myself.</p>
+<div class="sites">
+<article class="site">
+<div>
+<h3>House of Ex</h3>
+<p class="role">Ecommerce Executive, Shopify Developer · since Sep 2026</p>
+<p class="stack">Shopify · Liquid · GA4 · Figma · APIs · Headless</p>
+<p><a class="visit" href="https://www.houseofex.in/" target="_blank" rel="noopener">Visit houseofex.in ↗</a></p>
+</div>
+<ul>
+<li>Handle all Shopify coding for the store, from theme edits to API work.</li>
+<li>Integrated OMS Guru as the central OMS to control inventory across the website and marketplaces.</li>
+<li>Built the Shiprocket webhook integration for shipping updates.</li>
+<li>Write PRDs, run QA and UAT, and use GA4 and Microsoft Clarity to cut drop-off and lift conversion.</li>
+<li>Manage B2B, the freight portal and listings on Blinkit, Instamart and Zepto.</li>
+</ul>
+</article>
+
+<article class="site">
+<div>
+<h3>The Forsaken Store</h3>
+<p class="role">Operator · anime streetwear</p>
+<p class="stack">Shopify · Custom Liquid theme · Node.js · Remix · Klaviyo · WATI</p>
+<p><a class="visit" href="https://theforsakenstore.com" target="_blank" rel="noopener">Visit theforsakenstore.com ↗</a></p>
+</div>
+<ul>
+<li>Custom Liquid theme, collection metafields and an announcement bar redesign.</li>
+<li>Built a lead capture popup app on Node.js and Remix, connected to Klaviyo, WATI and Google Sheets.</li>
+<li>Set up Klaviyo flows, WhatsApp marketing via WATI, and Meta Pixel tracking.</li>
+<li>Run Meta ads and write SEO blog content aimed at Indian Gen Z streetwear shoppers.</li>
+</ul>
+</article>
+</div>
+</section>
+
+<section id="build">
+<h2>What I build</h2>
+<p class="sub">From a single section to a full store, with the numbers in mind.</p>
+<div class="grid3">
+<div><h3>Custom themes</h3><p>Liquid sections, metafield-driven layouts and fast, mobile-first storefronts.</p></div>
+<div><h3>Apps and integrations</h3><p>Node.js and Remix apps, webhooks, OMS, shipping and CRM connections.</p></div>
+<div><h3>Headless commerce</h3><p>Node.js and React front ends on top of Shopify's APIs.</p></div>
+<div><h3>Conversion and analytics</h3><p>GA4 setup, Clarity sessions, UX fixes in Figma, then tested in QA and UAT.</p></div>
+<div><h3>Growth tooling</h3><p>Klaviyo flows, WhatsApp automation and Meta ads tied into the store.</p></div>
+<div><h3>Client builds</h3><p>Shopify homepages built to a brief, with design, speed and conversion in mind.</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Selected projects</h2>
+<p class="sub">The store I am building now and a client Shopify build.</p>
+<div class="proj">
+<article style="grid-column:1/-1"><span class="now">Currently working on</span><h3>House of Ex custom storefront</h3><p>A heritage-inspired gifting storefront with shop and category pages, occasion collections, a bag, customer accounts, a newsletter signup and a concierge contact desk. This is a work in progress on a staging server.</p><p class="stack">Headless commerce · Custom storefront</p><p style="margin-top:10px"><a href="https://187.126.116.119/" target="_blank" rel="noopener">View the work in progress ↗</a></p></article>
+<article><h3>Aruvi Coffee homepage</h3><p>Premium homepage for a Tamil Nadu D2C coffee brand, built as a practical assessment for a Senior Shopify developer role.</p><p class="stack">Shopify · Liquid · Responsive UI</p></article>
+</div>
+</section>
+
+<section id="path">
+<h2>Path</h2>
+<div class="tl" style="margin-top:30px">
+<div><span class="when">Sep 2026 – now</span><span><h3>House of Ex</h3><p>Ecommerce Executive, Shopify Developer.</p></span></div>
+<div><span class="when">Ongoing</span><span><h3>The Forsaken Store</h3><p>Operator of a D2C brand on Shopify.</p></span></div>
+<div><span class="when">Earlier</span><span><h3>WooStudios and Sinex Management</h3><p>Backend internship in Python and Flask, and process management for US client operations.</p></span></div>
+<div><span class="when">Graduating Oct 2026</span><span><h3>B.Tech Computer Science, JIIT Noida</h3><p>Full-stack and AI/ML coursework and projects.</p></span></div>
+</div>
+</section>
+
+<section>
+<h2>Toolbox</h2>
+<div class="tags" style="margin-top:24px">
+<span>Shopify Liquid</span><span>Headless commerce</span><span>Node.js</span><span>Remix</span><span>React</span><span>Python</span><span>Flask</span><span>C++</span><span>GA4</span><span>Figma</span><span>Klaviyo</span><span>Meta Ads</span><span>Zapier</span><span>Make</span><span>Shiprocket</span><span>OMS Guru</span>
+</div>
+</section>
+
+<footer id="contact">
+<h2>Need a Shopify developer?</h2>
+<p class="sub">Tell me about your store and what you want to improve.</p>
+<div class="btns">
+<a class="btn p" href="mailto:your-email@example.com">Email me</a>
+<a class="btn s" href="https://www.houseofex.in/" target="_blank" rel="noopener">houseofex.in</a>
+<a class="btn s" href="https://theforsakenstore.com" target="_blank" rel="noopener">theforsakenstore.com</a>
+</div>
+</footer>
+</div>
+</body>
+</html>
