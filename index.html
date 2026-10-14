@@ -1,1 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Om Ji — Shopify Developer & D2C Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0a0a0c',
+                        cardbg: '#121217',
+                        bordercolor: '#27272a',
+                        accent: '#6366f1',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkbg text-zinc-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkbg/80 backdrop-blur-md border-b border-bordercolor">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-accent animate-pulse"></span>
+                Hari Om Ji
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm text-zinc-400 font-medium">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="mailto:hariomji8004@gmail.com" class="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-indigo-600 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all shadow-lg shadow-indigo-500/20">
+                    <i class="fa-solid fa-paper-plane text-xs"></i> Let's Talk
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 md:pt-44 md:pb-32 px-6 border-b border-bordercolor relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-6">
+                <i class="fa-solid fa-bolt"></i> Shopify Developer & Certified Scrum Master
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Architecting High-Converting <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">Shopify Ecosystems</span>
+            </h1>
+            <p class="text-base md:text-lg text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Specialized in custom Liquid theme engineering, Node.js/Remix app architecture, and seamless integrations for high-growth D2C brands. Currently powering <a href="https://www.houseofex.in/" target="_blank" class="text-zinc-200 underline hover:text-indigo-400">House of Ex</a>.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#projects" class="bg-white hover:bg-zinc-200 text-darkbg font-semibold px-6 py-3 rounded-lg transition-all text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-code"></i> View Work & Case Studies
+                </a>
+                <a href="https://linkedin.com/in/hari-om-ji-7a720324a" target="_blank" class="bg-cardbg hover:bg-bordercolor border border-bordercolor text-zinc-200 font-semibold px-6 py-3 rounded-lg transition-all text-sm flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin text-indigo-400"></i> LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Live Projects -->
+    <section id="experience" class="py-24 px-6 border-b border-bordercolor">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-indigo-400 font-semibold mb-2">Professional Track</h2>
+                <h3 class="text-3xl font-bold tracking-tight text-white">Experience & Live Platforms</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- House of Ex -->
+                <div class="bg-cardbg border border-bordercolor rounded-xl p-8 flex flex-col justify-between hover:border-zinc-700 transition-all">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full">Current Role</span>
+                            <span class="text-xs text-zinc-500">Sept 2026 – Present</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-1">Shopify Executive</h4>
+                        <p class="text-sm text-zinc-400 mb-6 font-medium">Ekamxperts Solutions Pvt. Ltd. (<a href="https://www.houseofex.in/" target="_blank" class="text-indigo-400 hover:underline">houseofex.in</a>)</p>
+                        <ul class="space-y-3 text-sm text-zinc-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                                <span>Owns end-to-end architecture, development, and performance optimization of the Shopify D2C platform stack[span_0](start_span)[span_0](end_span).</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                                <span>Manages gateway, CRM, and marketing tool integrations keeping customer data flowing cleanly[span_1](start_span)[span_1](end_span).</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                                <span>Implements GA4 analytics tracking and builds Figma-driven, conversion-focused mobile UX[span_2](start_span)[span_2](end_span).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-bordercolor flex items-center justify-between">
+                        <span class="text-xs text-zinc-500 font-mono">Stack: Liquid, Shopify APIs, GA4, Figma</span>
+                        <a href="https://www.houseofex.in/" target="_blank" class="text-xs text-indigo-400 hover:text-indigo-300 font-semibold flex items-center gap-1">Visit Store <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <!-- The Forsaken Store -->
+                <div class="bg-cardbg border border-bordercolor rounded-xl p-8 flex flex-col justify-between hover:border-zinc-700 transition-all">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full">D2C Founder & Dev</span>
+                            <span class="text-xs text-zinc-500">Aug 2024 – May 2026</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-1">Shopify Developer</h4>
+                        <p class="text-sm text-zinc-400 mb-6 font-medium">The Forsaken Store (<a href="https://theforsakenstore.com" target="_blank" class="text-indigo-400 hover:underline">theforsakenstore.com</a>)</p>
+                        <ul class="space-y-3 text-sm text-zinc-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                                <span>Built custom Liquid storefront theme from scratch, including advanced collection metafields[span_3](start_span)[span_3](end_span).</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                                <span>Developed a production-ready lead-capture app via Node.js/Remix integrating Klaviyo and WATI[span_4](start_span)[span_4](end_span).</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
+                                <span>Managed end-to-end performance automation, creator partnerships, and Excel-based inventory tracking[span_5](start_span)[span_5](end_span).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-bordercolor flex items-center justify-between">
+                        <span class="text-xs text-zinc-500 font-mono">Stack: Node.js, Remix, Klaviyo, Zapier</span>
+                        <a href="https://theforsakenstore.com" target="_blank" class="text-xs text-indigo-400 hover:text-indigo-300 font-semibold flex items-center gap-1">Visit Store <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Case Studies & Projects -->
+    <section id="projects" class="py-24 px-6 border-b border-bordercolor">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-indigo-400 font-semibold mb-2">Engineering Proof</h2>
+                <h3 class="text-3xl font-bold tracking-tight text-white">Featured Case Studies</h3>
+            </div>
+
+            <div class="space-y-12">
+                <!-- NestIQ -->
+                <div class="bg-cardbg border border-bordercolor rounded-xl p-8 hover:border-zinc-700 transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full mb-2 inline-block">Full-Stack / AI Integration</span>
+                            <h4 class="text-2xl font-bold text-white">NestIQ — Property Rental & Workflow Platform</h4>
+                        </div>
+                        <div class="text-xs font-mono bg-zinc-900 border border-bordercolor px-3 py-1.5 rounded-lg text-zinc-400">
+                            Impact: +32% Tenant Confidence | +18% Conversion
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-zinc-300">
+                        <div class="bg-darkbg/50 p-4 rounded-lg border border-bordercolor">
+                            <strong class="text-white block mb-1">Problem:</strong> High user churn caused by fake listings, lack of verification trust, and untraceable payment workflows[span_6](start_span)[span_6](end_span).
+                        </div>
+                        <div class="bg-darkbg/50 p-4 rounded-lg border border-bordercolor">
+                            <strong class="text-white block mb-1">Strategy:</strong> Interviewed 15+ segments, prioritized roadmap via RICE scoring, built AI recommendation and fake-listing detection models[span_7](start_span)[span_7](end_span).
+                        </div>
+                        <div class="bg-darkbg/50 p-4 rounded-lg border border-bordercolor">
+                            <strong class="text-white block mb-1">Execution:</strong> Delivered across 5 sprints, tracking 12+ KPIs to eliminate manual verification overhead and streamline bookings[span_8](start_span)[span_8](end_span).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SwiftRide -->
+                <div class="bg-cardbg border border-bordercolor rounded-xl p-8 hover:border-zinc-700 transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                        <div>
+                            <span class="text-xs font-semibold px-3 py-1 bg-violet-500/10 text-violet-400 rounded-full mb-2 inline-block">Real-time GPS / Fleet Management</span>
+                            <h4 class="text-2xl font-bold text-white">SwiftRide — Ride Booking & Fleet Platform</h4>
+                        </div>
+                        <div class="text-xs font-mono bg-zinc-900 border border-bordercolor px-3 py-1.5 rounded-lg text-zinc-400">
+                            Impact: 65% Wait Time Reduction | Zero Safety Incidents
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-zinc-300">
+                        <div class="bg-darkbg/50 p-4 rounded-lg border border-bordercolor">
+                            <strong class="text-white block mb-1">Problem:</strong> Peak-hour driver allocation delays (8–12 min wait times) and unsafe emergency escalation paths[span_9](start_span)[span_9](end_span).
+                        </div>
+                        <div class="bg-darkbg/50 p-4 rounded-lg border border-bordercolor">
+                            <strong class="text-white block mb-1">Strategy:</strong> Built PRD focusing on AI demand prediction, real-time GPS tracking with SOS integration, and dynamic pricing[span_10](start_span)[span_10](end_span).
+                        </div>
+                        <div class="bg-darkbg/50 p-4 rounded-lg border border-bordercolor">
+                            <strong class="text-white block mb-1">Execution:</strong> Managed 6 sprints reducing wait times down to 2–3 minutes while lifting overall driver efficiency by 28%[span_11](start_span)[span_11](end_span).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Skills Matrix -->
+    <section id="skills" class="py-24 px-6 border-b border-bordercolor">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-indigo-400 font-semibold mb-2">Technical Competence</h2>
+                <h3 class="text-3xl font-bold tracking-tight text-white">Core Skills & Tools</h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-cardbg border border-bordercolor p-6 rounded-xl">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 text-lg">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Shopify Engineering</h4>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Liquid customization, Node.js/Remix apps, Metafields, REST/Storefront APIs, and ecosystem app setups[span_12](start_span)[span_12](end_span).</p>
+                </div>
+
+                <div class="bg-cardbg border border-bordercolor p-6 rounded-xl">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 text-lg">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Analytics & Growth</h4>
+                    <p class="text-xs text-zinc-400 leading-relaxed">GA4 dashboard setup, CAC/LTV tracking, Klaviyo automations, Meta Pixel integration, and conversion optimization[span_13](start_span)[span_13](end_span).</p>
+                </div>
+
+                <div class="bg-cardbg border border-bordercolor p-6 rounded-xl">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 text-lg">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">UX & Design</h4>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Figma interface design, mobile-first design systems, omnichannel UX architecture, and wireframing[span_14](start_span)[span_14](end_span).</p>
+                </div>
+
+                <div class="bg-cardbg border border-bordercolor p-6 rounded-xl">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 text-lg">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Full-Stack Tech</h4>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Python, JavaScript, React, Node.js, MySQL, MongoDB, and Git version control workflows[span_15](start_span)[span_15](end_span).</p>
+                </div>
+
+                <div class="bg-cardbg border border-bordercolor p-6 rounded-xl">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 text-lg">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">Agile & Project Mgmt</h4>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Certified Scrum Master, Jira, Trello, Notion, backlog grooming, sprint retrospectives, and stakeholder coordination[span_16](start_span)[span_16](end_span).</p>
+                </div>
+
+                <div class="bg-cardbg border border-bordercolor p-6 rounded-xl">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 text-lg">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h4 class="font-bold text-white mb-2">AI & Machine Learning</h4>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Scikit-learn, NLP, MLPRegressor model tuning, prompt engineering, and LLM API integrations[span_17](start_span)[span_17](end_span).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="py-20 px-6 bg-darkbg text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-4">Let's Build Something Exceptional</h2>
+            <p class="text-sm text-zinc-400 mb-8">Whether you need custom Liquid theme builds, robust Shopify apps, or conversion architecture optimization — let's connect.</p>
+            
+            <div class="flex items-center justify-center gap-6 mb-10">
+                <a href="mailto:hariomji8004@gmail.com" class="bg-accent hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium text-sm transition-all shadow-lg shadow-indigo-500/20">
+                    <i class="fa-solid fa-envelope mr-2"></i> hariomji8004@gmail.com
+                </a>
+                <a href="tel:+918115784690" class="bg-cardbg hover:bg-bordercolor border border-bordercolor text-zinc-200 px-6 py-3 rounded-lg font-medium text-sm transition-all">
+                    <i class="fa-solid fa-phone mr-2"></i> +91-8115784690
+                </a>
+            </div>
+
+            <div class="flex items-center justify-center gap-6 text-zinc-400 text-lg mb-10">
+                <a href="https://linkedin.com/in/hari-om-ji-7a720324a" target="_blank" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Haripaswanji" target="_blank" class="hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <p class="text-xs text-zinc-600">© 2026 Hari Om Ji. Built with Tailwind CSS & Clean Code Standards.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
 
